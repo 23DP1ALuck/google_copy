@@ -2,22 +2,62 @@ ul{
     float: right;
     list-style-type: none;
 }
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
 li{
     float: right;
-    padding: 10px;
+    padding-right: 30px;
 }
 li img{
     margin-bottom: 10px;
 }
 #center-container img{
-    width: 200px;
+    width: 400px;
     height: auto;
 }
+section{
+    padding-top: 100px;
+}
 #center-container{
-    padding-top: 200px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     justify-self: center;
     align-items: center;
     flex-direction: column;
+}
+#search-bar {
+    padding-top: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+#search-bar input{
+    border: 2px solid black;
+    border-radius: 60px;
+    width: 700px;
+    height: 40px;
+    padding-left: 15px;
+}
+#search-bar-form{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+}
+#search-bar-form button img{
+    width: 40px;
+}
+#search-bar-form button{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    right: 56vh;
+    cursor: pointer;
 }
