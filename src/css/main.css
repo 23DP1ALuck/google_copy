@@ -1,5 +1,7 @@
 ul{
     float: right;
+    display: flex;
+    gap: 15px;
     list-style-type: none;
 }
 body{
@@ -8,14 +10,11 @@ body{
 }
 li{
     float: right;
-    padding-right: 30px;
+    padding-right: 20px;
+    font-size: 13px;
 }
 li img{
-    margin-bottom: 10px;
-}
-#center-container img{
-    width: 400px;
-    height: auto;
+    width: 20px;
 }
 section{
     padding-top: 100px;
@@ -24,40 +23,59 @@ section{
     padding-top: 100px;
     display: flex;
     justify-content: center;
-    justify-self: center;
     align-items: center;
     flex-direction: column;
 }
 #search-bar {
-    padding-top: 100px;
-    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 5vh;
+    height: 6vh;
+    width: 80vh;
+    border-radius: 40px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
 }
 #search-bar input{
-    border: 2px solid black;
-    border-radius: 60px;
-    width: 700px;
-    height: 40px;
-    padding-left: 15px;
-}
-#search-bar-form{
-    width: 900px;
-    display: flex;
-    justify-content: center;
-}
-#search-bar-form button img{
-    width: 40px;
-}
-#search-bar-form button{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
+    border-radius: 20px;
     border: 0;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    right: 56vh;
+    width: 70vh;
+    height: 5vh;
+    background-color: transparent;
+}
+#search-bar input:focus {
+    outline: none;
+  }
+#search-bar img{
+    width: 20px;
+    height: 20px;
+}
+#cards-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.shortcut-card{
+    border-radius: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.shortcut-card:hover{
+    background-color: #D3D3D3;
+    transform: scale(1.1);
     cursor: pointer;
+}
+.shortcut-card img{
+    width: 30px;
+}
+.shortcut-card > p{
+    font-size: 10px;
 }
